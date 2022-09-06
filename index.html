@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+ 
+    <header class="header">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <!--Section to search for a City-->
+    <section>
+      <h3>Search for a City:</h3>
+      <div id="user-form" class="card-body">
+        <label for="city"></label>
+        <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+      </div>
+      <button type="submit" class="btn" id="citySearchBtn">Search</button>
+    </section>
+
+    <!--Section for Saved City Buttons-->
+    <section id="searchedCities">
+    
+    </section>
+
+
+</body>
+
+<script src="./assets/js/script.js"></script>
+
+</html>
