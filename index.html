@@ -23,14 +23,23 @@
         <label for="city"></label>
         <input name="city" id="city" type="text" autofocus="true" class="form-input" />
       </div>
-      <button type="submit" class="btn" id="citySearchBtn">Search</button>
+      <button type="button" class="btn btn-primary" id="citySearchBtn">Search</button>
     </section>
 
     <!--Section for Saved City Buttons-->
-    <section id="searchedCities">
-    
+    <section id="searchedCities"> 
     </section>
 
+    <!--Current weather forcast-->
+    <div class="col-sm-8">
+      <div class="row ml-2 border border-dark rounded">
+          <div class="col-sm-12" id="current-weather">
+              <h3 class="city-name mb-1 mt-2 bolder" id="currentCity"></h3>
+              <p>Temperature: <span class="current" id="temperature"></span></p>
+              <p>Humidity: <span class="current" id="humidity"></span></p> 
+              <p>Wind Speed: <span class="current" id="windSpeed"></span></p>
+              <p>UV Index: <span class=" rounded py-2 px-2 text-white" id="uvIndex"></span></p> 
+          </div>
 
 </body>
 
