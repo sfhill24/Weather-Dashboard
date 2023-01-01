@@ -11,38 +11,49 @@
 </head>
 
 <body>
- 
-    <header class="header">
-      <h1>Weather Dashboard</h1>
-    </header>
 
-    <!--Section to search for a City-->
-    <section>
-      <h3>Search for a City:</h3>
-      <div id="user-form" class="card-body">
-        <label for="city"></label>
-        <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+  <header class="header">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <!--Section to search for a City-->
+  <section>
+    <h3>Search for a City:</h3>
+    <div id="user-form" class="card-body">
+      <label for="city"></label>
+      <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+    </div>
+    <button type="button" class="btn btn-primary" id="citySearchBtn">Search</button>
+  </section>
+
+  <!--Section for Saved City Buttons-->
+  <section id="searchedCities">
+  </section>
+
+  <!--Current weather forcast-->
+  <div class="col-sm-8">
+    <div class="row ml-2 border border-dark rounded">
+      <div class="col-sm-12" id="current-weather">
+        <h3 class="city-name mb-1 mt-2 bolder" id="currentCity"></h3>
+        <h3 class="city-name mb-1 mt-2 bolder" id="currentDate"></h3>
+        <p>Temperature: <span class="current" id="temperature"></span><span id="icon"></span></p>
+        <p>Humidity: <span class="current" id="humidity"></span></p>
+        <p>Wind Speed: <span class="current" id="windSpeed"></span></p>
       </div>
-      <button type="button" class="btn btn-primary" id="citySearchBtn">Search</button>
-    </section>
+    </div>
+  </div>
 
-    <!--Section for Saved City Buttons-->
-    <section id="searchedCities"> 
-    </section>
+  <div class="col-sm-8" id="FiveDayForecast">
 
-    <!--Current weather forcast-->
-    <div class="col-sm-8">
-      <div class="row ml-2 border border-dark rounded">
-          <div class="col-sm-12" id="current-weather">
-              <h3 class="city-name mb-1 mt-2 bolder" id="currentCity"></h3>
-              <p>Temperature: <span class="current" id="temperature"></span></p>
-              <p>Humidity: <span class="current" id="humidity"></span></p> 
-              <p>Wind Speed: <span class="current" id="windSpeed"></span></p>
-              <p>UV Index: <span class=" rounded py-2 px-2 text-white" id="uvIndex"></span></p> 
-          </div>
+  </div>
+
+
+
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 <script src="./assets/js/script.js"></script>
 
 </html>
