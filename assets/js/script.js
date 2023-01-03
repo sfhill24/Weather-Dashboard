@@ -1,27 +1,9 @@
-//1. User search for city: DONE
-//a. City is saved to local storage: DONE
-//b. Cities searched are displayed as buttons: DONE
-//2. Current day forcast is displayed with city name, date, temp, wind, humidity DONE
-//3. Display 5 Day forcast for current city: DONE
-//4. Display 5 day forcast for each city searced and saved (use loop): DONE
-//5: Display Icon: DONE
-//6. Turn recent searches into buttons: DONE
-//7. Clear search textbox after each search: DONE
-//8. Style Page
-//9. Code clean up
-//10. Display City Name: DONE
-//11. Read Me
-
 var currentCity = document.querySelector("#currentCity");
 var currentDate = document.querySelector("#currentDate");
 var icon = document.querySelector("#icon");
-var temp = document.getElementById("temperature"); //fix
+var temp = document.querySelector("#temperature");
 var wind = document.querySelector("#windSpeed");
 var humidity = document.querySelector("#humidity");
-var futureDate = document.querySelector("#futureDate");
-var futureTemp = document.querySelector("#futureTemperature");
-var futureWind = document.querySelector("#futureWindSpeed");
-var futureHumidity = document.querySelector("#futureHumidity");
 var futureCast = document.querySelector("#FiveDayForecast");
 
 //Get city from user and save to local storage
@@ -56,7 +38,7 @@ citySearch.addEventListener("click", function (event) {
 
   calculateWeather(cityName);
 
-  //clear search button
+  //clear search button when no cityName is enter
   cityInput.value = null;
 });
 
@@ -85,7 +67,7 @@ function calculateWeather(cityName) {
 
       futureCast.innerHTML = null;
 
-      // filter down to 5 records (time)
+      // loop to generate 5 day forecast
       for (let i = 0; i < noonWeatherData.length; i++) {
         var cardDiv = document.createElement("div");
         cardDiv.className = "card text-bg-dark mb-3 cardBody";
