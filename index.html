@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Weather Dashboard</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Weather Dashboard</title>
-</head>
+  <body>
+    <header class="header">
+      <h1>Weather Dashboard</h1>
+    </header>
 
-<body>
+    <!--Section to search for a City-->
+    <div class="container-fluid main-div">
+    <section class="row">
+      <div class="col-lg-3">
+        <h2 class="header-h2">Search for a City:</h2>
+        <div id="user-form" class="search-div" style="padding-right:165px">
+          <label for="city"></label>
+          <input
+            name="city"
+            id="city"
+            type="text"
+            autofocus="true"
+            class="form-input textBox"
+          />
+        </div>
+        <button type="button" class="search-button btn btn-primary" id="citySearchBtn">
+        Search
+        </button>
+       <div class="border-bottom border-div"></div>
 
-  <header class="header">
-    <h1>Weather Dashboard</h1>
-  </header>
-
-  <!--Section to search for a City-->
-  <section>
-    <h3>Search for a City:</h3>
-    <div id="user-form" class="card-body">
-      <label for="city"></label>
-      <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-    </div>
-    <button type="button" class="btn btn-primary" id="citySearchBtn">Search</button>
-  </section>
-
-  <!--Section for Saved City Buttons-->
-  <section id="searchedCities">
-  </section>
-
-  <!--Current weather forcast-->
-  <div class="col-sm-8">
-    <div class="row ml-2 border border-dark rounded">
-      <div class="col-sm-12" id="current-weather">
-        <h3 class="city-name mb-1 mt-2 bolder" id="currentCity"></h3>
-        <h3 class="city-name mb-1 mt-2 bolder" id="currentDate"></h3>
-        <p>Temperature: <span class="current" id="temperature"></span><span id="icon"></span></p>
-        <p>Humidity: <span class="current" id="humidity"></span></p>
-        <p>Wind Speed: <span class="current" id="windSpeed"></span></p>
+        <!--Section for Saved City Buttons-->
+        <section id="searchedCities"></section>
       </div>
-    </div>
+      <!--Current weather forcast-->
+      <div class="col-lg-9">
+        <div class="row ml-2 border border-dark rounded">
+          <div class="" id="current-weather">
+          <div class="icon-div">
+            <h3 class="city-name mb-1 mt-2 bolder header-h3" id="currentCity"></h3>
+            <span id="icon"></span>
+          </div>
+            <h3 class="city-name mb-1 mt-2 bolder currentDate" id="currentDate"></h3>
+            <p>
+              Temperature: <span class="current" id="temperature"></span><span>&#8457;</span>
+            </p>
+            <p>Humidity: <span class="current" id="humidity"></span>MPH</p>
+            <p>Wind Speed: <span class="current" id="windSpeed"></span>%</p>
+          </div>
+        </div>
+        <h4 class="header-h4">5 Day Forecast:</h4>
+        <div class="row" id="FiveDayForecast"></div>
+      </div>
+    </section>
   </div>
+  </body>
 
-  <div class="col-sm-8" id="FiveDayForecast">
-
-  </div>
-
-
-
-
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-<script src="./assets/js/script.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </html>

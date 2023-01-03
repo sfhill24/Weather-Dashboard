@@ -1,0 +1,90 @@
+body * {
+  padding: 3px;
+}
+
+body {
+  background-color: lightgrey !important;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: darkcyan;
+}
+
+.header-h2 {
+  padding-bottom: 0px;
+}
+
+.main-div {
+  padding-top: 20px;
+}
+
+.search-div {
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.search-button {
+  width: 450px;
+  background-color: darkcyan !important;
+}
+
+.border-div {
+  background-color: dimgray;
+  margin-top: 10px;
+}
+
+.textBox {
+  width: 450px;
+}
+
+.city-btn {
+  width: 450px;
+  padding-left: 0px;
+  margin-right: 10px;
+}
+
+.header-h3 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.currentDate {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.icon-div {
+  display: flex;
+  height: 50px;
+  padding-left: 0px;
+}
+
+.mainIcon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.cardBody {
+  background-color: darkcyan !important;
+  border-style: solid !important;
+  border-color: white !important;
+  width: 200px;
+  height: 300px;
+  margin-top: 20px;
+  color: white;
+}
+
+#FiveDayForecast {
+  justify-content: space-evenly;
+}
+
+.header-h4 {
+  padding-top: 15px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
