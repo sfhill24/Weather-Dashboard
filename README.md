@@ -17,11 +17,7 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 
-#Built With:
-#HTML
-#CSS
-#JQuery
-#JavaScript
+Built With: HTML, CSS, JQuery, and JavaScript
 
 Website
 https://sfhill24.github.io/Weather-Dashboard/
