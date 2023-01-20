@@ -62,7 +62,7 @@ function calculateWeather(cityName) {
       humidity.innerHTML = data.list[0].main.humidity;
 
       var noonWeatherData = data.list.filter((x) =>
-        x.dt_txt.includes("18:00:00")
+        x.dt_txt.includes("12:00:00")
       );
 
       futureCast.innerHTML = null;
