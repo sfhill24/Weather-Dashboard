@@ -1,4 +1,5 @@
 # Weather-Dashboard
+![WeatherDashboard](https://user-images.githubusercontent.com/49098706/210295446-70387981-2d57-4fbf-85e0-f47542fa2047.png)
 
 AS A traveler
 I WANT to see the weather outlook for multiple cities </br>
@@ -16,14 +17,14 @@ WHEN I click on a city in the search history</br>
 THEN I am again presented with current and future conditions for that city</br>
 
 
-# Built With
+## Built With
 HTML</br>
 CSS</br>
 JQuery</br>
 JavaScript</br>
 
-# Website
+## Website
 https://sfhill24.github.io/Weather-Dashboard/
 
-# Contribution
+## Contribution
 Made with ❤️ by Shelly Foxworth-Hill
